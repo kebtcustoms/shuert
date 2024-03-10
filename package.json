@@ -1,0 +1,31 @@
+{
+	"name": "newsvelte",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"start": "node build/index.js",
+		"run": "node build/index.js"
+	},
+	"devDependencies": {
+		"@sveltejs/kit": "^2.5.3",
+		"nodemailer": "^6.9.7",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"typescript": "^5.0.0",
+		"vite": "^5.1.5"
+	},
+	"type": "module",
+	"dependencies": {
+		"@sveltejs/adapter-node": "^5.0.1",
+		"firebase": "^10.5.0",
+		"gsap": "^3.12.5",
+		"quill": "^1.3.7",
+		"svelte-swipe": "^2.0.4",
+		"swiper": "^11.0.5"
+	}
+}
