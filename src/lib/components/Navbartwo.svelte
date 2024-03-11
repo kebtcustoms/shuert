@@ -1,0 +1,602 @@
+<script>
+  // @ts-nocheck
+
+  import { goto } from "$app/navigation"; // Import SvelteKit's goto function for navigation
+
+
+  let productActive = false;
+  let isActive = false;
+  // let selectedLanguage = 'EN'; // Default language is English
+  // let languages = ['EN', 'FR', 'ES']; // List of available languages
+  function handleNavigation() {
+    isActive = false; // this will close the menu
+  }
+</script>
+
+<div class="navbar">
+  <div class="containerleft">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <a href="/">
+    <div class="logo" on:click={() => goto(`/`)}>
+      <svg
+        class="biglogo"
+        id="Layer_2"
+        data-name="Layer 2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 360.55 47"
+      >
+        <defs>
+          <style>
+            .cls-1 {
+              fill: none;
+            }
+
+            .cls-2 {
+              fill: #efefef;
+            }
+
+            .cls-3 {
+              fill: #ce0024;
+            }
+          </style>
+        </defs>
+        <g id="Layer_1_copy" data-name="Layer 1 copy">
+          <path
+            id="Path_4"
+            data-name="Path 4"
+            class="cls-3"
+            d="M0,25.05c.28,0,47.1,.01,47.37,.03,5.89,.57,10.2,5.8,9.63,11.69-.5,5.15-4.61,9.21-9.76,9.64-.22,.01-47,.02-47.23,.02V25.05Z"
+          />
+          <path
+            id="Path_5"
+            data-name="Path 5"
+            class="cls-3"
+            d="M54.66,21.91c-.28,0-44.71-.01-44.98-.03C4.17,21.39-.05,16.75,0,11.22-.05,5.63,4.25,.97,9.82,.55c.22-.01,44.61-.02,44.84-.02V21.91Z"
+          />
+          <path
+            id="Path_6"
+            data-name="Path 6"
+            class="cls-2"
+            d="M66.25,15.4c.14,1.12,1.35,1.8,3.47,1.8s3.11-.5,3.11-1.54c0-.92-.91-1.45-2.75-1.68l-5.75-.77c-4.76-.62-7.18-2.78-7.18-6.36,0-4.87,3.68-6.85,11.44-6.85s12.15,2.01,12.49,6.77h-8.94c-.19-1.33-1.49-2.04-3.88-2.04-1.82,0-2.78,.59-2.78,1.42,0,.95,.96,1.21,2.94,1.51l7.01,1.07c4.38,.68,6.54,2.72,6.54,6.24,0,5.35-4.37,7.6-13.5,7.6-7.53,0-11.49-2.63-11.55-7.16h9.32Z"
+          />
+          <path
+            id="Path_7"
+            data-name="Path 7"
+            class="cls-2"
+            d="M84.25,.56h7.7V7.95h8.77V.56h7.7V21.91h-7.7V13.28h-8.77v8.63h-7.7V.56Z"
+          />
+          <path
+            id="Path_8"
+            data-name="Path 8"
+            class="cls-2"
+            d="M118.87,11c0,4.02,.88,5.7,4.04,5.7s4.01-1.68,4.01-5.7V.56h7.7V11.77c0,7.48-3.65,10.73-11.71,10.73s-11.74-3.31-11.74-10.73V.56h7.7V11Z"
+          />
+          <path
+            id="Path_9"
+            data-name="Path 9"
+            class="cls-2"
+            d="M137.38,.56h20.07V5.79h-12.37v2.55h10.81v5.26h-10.81v2.81h12.55v5.5h-20.25V.56Z"
+          />
+          <path
+            id="Path_10"
+            data-name="Path 10"
+            class="cls-2"
+            d="M181.6,1.66c1.53,1.03,2.4,2.8,2.28,4.64,.14,2.31-1.16,4.46-3.27,5.41,2.12,.94,2.36,2.13,2.47,4.55,.14,3.08,.14,4.82,1.07,5.32v.32h-8.55c-.6-1.03-.33-2.57-.52-4.38-.16-1.6-.88-2.13-2.78-2.13h-4.59v6.5h-7.81V.56h15.12c3.13,0,5.31,.27,6.57,1.1m-9.4,8.13c2.12,0,3.19-.41,3.19-1.95,0-1.63-1.13-1.86-3.38-1.86h-4.3v3.81h4.49Z"
+          />
+          <path
+            id="Path_11"
+            data-name="Path 11"
+            class="cls-2"
+            d="M193,5.97h-7.17V.56h22.08V5.97h-7.21v15.93h-7.7V5.97Z"
+          />
+          <path
+            id="Path_12"
+            data-name="Path 12"
+            class="cls-2"
+            d="M64.34,30.45h-7.18v-5.4h22.08v5.4h-7.2v15.9h-7.7v-15.9Z"
+          />
+          <path
+            id="Path_13"
+            data-name="Path 13"
+            class="cls-2"
+            d="M81.52,25.06h20.08v5.22h-12.37v2.54h10.81v5.25h-10.81v2.81h12.55v5.48h-20.25V25.06Z"
+          />
+          <path
+            id="Path_14"
+            data-name="Path 14"
+            class="cls-2"
+            d="M305.11,25.06h20.08v5.22h-12.38v2.54h10.8v5.25h-10.8v2.81h12.55v5.48h-20.25V25.06Z"
+          />
+          <path
+            id="Path_15"
+            data-name="Path 15"
+            class="cls-2"
+            d="M116.46,29.96c-3.3,0-5.09,2.03-5.09,5.75s1.79,5.72,5.09,5.72c2.13,.2,4.05-1.32,4.32-3.45h8.88c-.8,5.84-5.28,8.94-13.2,8.94-8.85,0-13.36-3.84-13.36-11.21s4.51-11.21,13.36-11.21c8.3,0,12.87,3.42,13.14,9.5h-8.8c-.25-2.62-1.76-4.04-4.35-4.04"
+          />
+          <path
+            id="Path_16"
+            data-name="Path 16"
+            class="cls-2"
+            d="M131.93,25.06h7.7v7.38h8.77v-7.38h7.7v21.29h-7.7v-8.61h-8.77v8.61h-7.7V25.06Z"
+          />
+          <path
+            id="Path_17"
+            data-name="Path 17"
+            class="cls-2"
+            d="M158.85,25.06h9.1l7.67,12.27v-12.27h7.45v21.29h-8.63l-8.33-12.48v12.48h-7.26V25.06Z"
+          />
+          <path
+            id="Path_18"
+            data-name="Path 18"
+            class="cls-2"
+            d="M198.71,24.49c8.86,0,13.37,3.83,13.37,11.21s-4.52,11.21-13.37,11.21-13.36-3.84-13.36-11.21,4.51-11.21,13.36-11.21m0,16.93c3.3,0,5.09-2.01,5.09-5.72s-1.79-5.75-5.09-5.75-5.08,2.03-5.08,5.75,1.79,5.72,5.08,5.72"
+          />
+          <path
+            id="Path_19"
+            data-name="Path 19"
+            class="cls-2"
+            d="M214.35,25.06h7.7v15.45h12.12v5.84h-19.83V25.06Z"
+          />
+          <path
+            id="Path_20"
+            data-name="Path 20"
+            class="cls-2"
+            d="M248.97,24.49c8.85,0,13.37,3.83,13.37,11.21s-4.51,11.21-13.37,11.21-13.36-3.84-13.36-11.21,4.51-11.21,13.36-11.21m0,16.93c3.3,0,5.09-2.01,5.09-5.72s-1.79-5.75-5.09-5.75-5.09,2.03-5.09,5.75,1.79,5.72,5.09,5.72"
+          />
+          <path
+            id="Path_21"
+            data-name="Path 21"
+            class="cls-2"
+            d="M277.97,46.91c-8.85,0-13.36-3.84-13.36-11.21s4.51-11.21,13.36-11.21c7.67,0,12.15,3.01,12.73,7.67h-8.44c-.67-1.63-2.31-2.66-4.07-2.57-3.19,0-5.3,2.36-5.3,6.11s2.01,5.96,5.42,5.96c2.64,0,4.4-1.12,4.76-2.81h-3.19v-4.6h11.08v12.09h-3.47l-.82-1.89c-1.9,1.77-4.73,2.45-8.69,2.45"
+          />
+          <rect
+            id="Rectangle_19"
+            data-name="Rectangle 19"
+            class="cls-2"
+            x="294.18"
+            y="25.06"
+            width="7.7"
+            height="21.29"
+          />
+          <path
+            id="Path_22"
+            data-name="Path 22"
+            class="cls-2"
+            d="M336.96,39.86c.14,1.12,1.35,1.8,3.46,1.8s3.11-.5,3.11-1.54c0-.91-.91-1.45-2.75-1.68l-5.75-.77c-4.75-.62-7.17-2.77-7.17-6.34,0-4.87,3.68-6.84,11.44-6.84s12.15,2,12.48,6.76h-8.93c-.2-1.33-1.49-2.04-3.88-2.04-1.81,0-2.78,.59-2.78,1.42,0,.94,.96,1.21,2.94,1.5l7.01,1.06c4.37,.68,6.55,2.71,6.55,6.22,0,5.34-4.37,7.58-13.5,7.58-7.54,0-11.49-2.63-11.55-7.14h9.32Z"
+          />
+          <path
+            id="Path_23"
+            data-name="Path 23"
+            class="cls-2"
+            d="M357.29,24.5c.88,0,1.73,.35,2.34,.98,.3,.3,.53,.65,.69,1.04,.32,.8,.31,1.7,0,2.5-.16,.39-.41,.75-.71,1.04-.31,.3-.67,.54-1.07,.7-.39,.16-.81,.25-1.24,.24-.43,0-.85-.09-1.25-.25-.4-.17-.76-.42-1.06-.73-.3-.3-.53-.65-.69-1.04-.27-.66-.31-1.4-.12-2.09,.08-.29,.2-.57,.35-.83,.57-.98,1.63-1.58,2.77-1.57m0,.55c-.35,0-.7,.06-1.03,.19-.32,.13-.61,.33-.86,.57-.26,.26-.47,.56-.61,.9-.43,1-.21,2.16,.57,2.93,.25,.26,.55,.47,.89,.61,.66,.28,1.4,.28,2.06,0,.33-.14,.64-.34,.9-.59,.25-.24,.45-.53,.59-.85,.14-.32,.21-.66,.21-1.01,0-.37-.06-.73-.2-1.07-.13-.33-.33-.63-.58-.88-.25-.26-.55-.47-.89-.61-.34-.14-.69-.2-1.06-.2m-1.35,.85h1.42c.4-.03,.81,.06,1.16,.26,.26,.17,.41,.47,.39,.78,0,.22-.07,.44-.21,.61-.15,.18-.36,.3-.58,.35l.81,1.62h-.98l-.69-1.48h-.43v1.48h-.88v-3.61Zm.88,.56v1.05h.43c.2,.01,.39-.03,.57-.12,.12-.09,.19-.23,.18-.38,.01-.16-.06-.31-.19-.41-.18-.1-.39-.15-.6-.13h-.39Z"
+          />
+          <rect
+            id="Rectangle_20"
+            data-name="Rectangle 20"
+            class="cls-1"
+            x="0"
+            width="360.55"
+            height="47"
+          />
+        </g>
+      </svg>
+      <svg
+        class="smalllogo"
+        id="Layer_2"
+        data-name="Layer 2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 360.55 47"
+      >
+        <defs>
+          <style>
+            .cls-1 {
+              fill: none;
+            }
+
+            .cls-2 {
+              fill: #efefef;
+            }
+
+            .cls-3 {
+              fill: #ce0024;
+            }
+          </style>
+        </defs>
+        <g id="Layer_1_copy" data-name="Layer 1 copy">
+          <path
+            id="Path_4"
+            data-name="Path 4"
+            class="cls-3"
+            d="M0,25.05c.28,0,47.1,.01,47.37,.03,5.89,.57,10.2,5.8,9.63,11.69-.5,5.15-4.61,9.21-9.76,9.64-.22,.01-47,.02-47.23,.02V25.05Z"
+          />
+          <path
+            id="Path_5"
+            data-name="Path 5"
+            class="cls-3"
+            d="M54.66,21.91c-.28,0-44.71-.01-44.98-.03C4.17,21.39-.05,16.75,0,11.22-.05,5.63,4.25,.97,9.82,.55c.22-.01,44.61-.02,44.84-.02V21.91Z"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>
+  </div>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <!-- svelte-ignore a11y-no-static-element-interactions -->
+  <div class="containerright">
+    <div class="menu" on:click={() => (isActive = !isActive)}>
+      <div
+        class={isActive ? "hamburger-menu rotate-right" : "hamburger-menu"}
+      ></div>
+      <div
+        class={isActive ? "hamburger-menu1 rotate-left" : "hamburger-menu1"}
+      ></div>
+
+      <p class="menutext">MENU</p>
+    </div>
+    <button class="requestbutton" on:click={() => goto(`/requestaquote`)}
+      >Request a Quote</button
+    >
+  </div>
+</div>
+<div class={isActive ? "bigmenu open" : "bigmenu"}>
+  <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+  <div class="dropmenu">
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div class="producttitlecont">
+      <a href="/products/unipak"on:click={handleNavigation}><h1>Products</h1></a>
+      <!-- <h1 on:click={() => handleNavigation("/products")}>Products</h1> -->
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+      <div
+        class={productActive ? "productssvgarrow" : "productssvgarrow spin"}
+        on:click={() => (productActive = !productActive)}
+      >
+        <svg
+          id="Group_515"
+          data-name="Group 515"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="24.179"
+          height="13.619"
+          viewBox="0 0 24.179 13.619"
+        >
+          <defs>
+            <clipPath id="clip-path">
+              <rect
+                id="Rectangle_368"
+                data-name="Rectangle 368"
+                width="24.179"
+                height="13.619"
+                transform="translate(0 0)"
+                fill="none"
+              />
+            </clipPath>
+          </defs>
+          <g id="Group_514" data-name="Group 514" clip-path="url(#clip-path)">
+            <path
+              id="Path_330"
+              data-name="Path 330"
+              d="M22.179,2,12.22,11.619h-.261L2,2"
+              fill="none"
+              stroke="#f2f2f2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="4"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class={productActive ? "productmenu" : "productmenu closed"}>
+      <a href="/products/unipak"on:click={handleNavigation}><h2>Uni-Pak</h2></a>
+      <a href="/products/unipallet"on:click={handleNavigation}><h2>Uni-Pallet</h2></a>
+      <a href="/products/unidirectional"on:click={handleNavigation}><h2>Uni-Directional</h2></a>
+      <a href="/products/unicase"on:click={handleNavigation}><h2>Uni-Case</h2></a>
+      <a href="/products/unirak"on:click={handleNavigation}><h2>Uni-Rak</h2></a>
+      <a href="/products/yarnpak"on:click={handleNavigation}><h2>Yarn-Pak</h2></a>
+      <a href="/products/propak"on:click={handleNavigation}><h2>Pro-Pak</h2></a>
+      <a href="/products/remanpak"on:click={handleNavigation}><h2>Reman-Pak</h2></a>
+      <a href="/products/batterypak"on:click={handleNavigation}><h2>Battery-Pak</h2></a>
+    </div>
+    
+    <a href="/customdesign"on:click={handleNavigation}><h1>Custom Design</h1></a>
+    <a href="/shuertadvantage"on:click={handleNavigation}><h1>The Shuert Advantage</h1></a>
+    <a href="/sustainability"on:click={handleNavigation}><h1>Sustainability</h1></a>
+    <a href="/contact" on:click={handleNavigation}><h1>Contact</h1></a>
+    <a href="/requestaquote" on:click={handleNavigation}><h1>Request a Quote</h1></a>
+    <!-- <h1 on:click={() => handleNavigation("/shuertadvantage")}>The Shuert Advantage</h1>
+    <h1 on:click={() => handleNavigation("/sustainability")}>Sustainability</h1>
+    <h1 on:click={() => handleNavigation("/contact")}>Contact</h1>
+    <h1 on:click={() => handleNavigation("/requestaquote")}>Request a Quote</h1> -->
+  </div>
+  <!-- <button class="requestbutton2" on:click={() => goto(`/requestaquote`)}>Request a Quote</button> -->
+</div>
+
+<style>
+  a {
+    color: #f2f2f2;
+    text-decoration: none
+  }
+  .navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(128, 128, 128, 0.301);
+    border: #f2f2f21a solid 1px;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    backdrop-filter: blur(50px);
+    top: 0;
+    height: 55px;
+  }
+
+  .containerleft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .containerright {
+    display: flex;
+    gap: 20px;
+  }
+
+  .logo {
+    margin-left: 15px;
+    width: 200px;
+    /* border: solid 1px pink; */
+    cursor: pointer;
+  }
+
+  .biglogo {
+    /* max-width: 20%; */
+    height: auto;
+  }
+
+  .smalllogo {
+    display: none;
+  }
+
+  .menu {
+    /* margin-right: 60px; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #f2f2f2;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .hamburger-menu {
+    width: 60px;
+    height: 2px;
+    background-color: #f2f2f2;
+    margin-bottom: 8px;
+    margin-right: -65px;
+    rotate: 0deg;
+    transition: transform 0.3s ease;
+  }
+
+  .rotate-right {
+    transform: rotate(12deg) translate(0px, 0px);
+    transition: transform 0.3s ease;
+    margin-bottom: 0.5px;
+  }
+
+  .hamburger-menu1 {
+    width: 60px;
+    height: 2px;
+    background-color: #f2f2f2;
+    margin-top: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  .rotate-left {
+    transform: rotate(-12deg) translate(0px, 0px);
+    margin-top: 1px;
+    transition: transform 0.3s ease;
+  }
+
+  /* .hamburger-menu1:hover{} */
+
+  .requestbutton {
+    margin-right: 10px;
+    position: relative;
+    justify-self: flex-end;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: border-color 0.5s ease;
+    /* border: 1px solid #f2f2f2; */
+  }
+
+  .requestbutton:hover {
+    background-color: #ce0024;
+    /* border: 1px solid #ce0024; */
+    /* transition: border-color 0.01s ease; */
+    color: #f2f2f2;
+    transition: background-color 0.5s ease;
+  }
+
+  .bigmenu {
+    opacity: 0;
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    z-index: 98;
+    right: 0;
+    border-radius: 0px 0px 15px 15px;
+    border: #f2f2f21a solid 1px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    pointer-events: none;
+    transition:
+      opacity 0.15s,
+      background-color 0.3s,
+      backdrop-filter 0.3s ease;
+  }
+
+  .open {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.047);
+    transition:
+      opacity 0.15s,
+      background-color 0.15s ease;
+    backdrop-filter: blur(70px);
+    pointer-events: auto;
+  }
+
+  .dropmenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #f2f2f2;
+    gap: 10px;
+  }
+
+  .dropmenu h1 {
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .dropmenu h2 {
+    font-weight: 100;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .producttitlecont {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .productssvgarrow {
+    height: 10px;
+    transition: transform 0.15s ease-in-out;
+  }
+
+  .spin {
+    transform: rotate(-90deg);
+  }
+
+  .productssvgarrow svg {
+    height: 100%;
+  }
+
+  .productmenu {
+    display: block;
+    transition:
+      transform 0.5s ease-out,
+      opacity 0.5s ease-out;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  .closed {
+    display: none;
+    transform: translateX(-100%); 
+  opacity: 0;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .navbar {
+      width: 100%;
+    }
+
+    .requestbutton {
+      display: none;
+    }
+
+    .menu {
+      margin-right: 20px;
+    }
+
+    .menutext {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    /* .navbar {
+    width: 95%;
+  } */
+
+  .bigmenu {
+    opacity: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 98;
+    right: 0;
+    border-radius: 0px 0px 15px 15px;
+    border: #f2f2f21a solid 1px;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    pointer-events: none;
+    transition:
+      opacity 0.15s,
+      background-color 0.3s,
+      backdrop-filter 0.3s ease;
+  }
+
+  .open {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.047);
+    transition:
+      opacity 0.15s,
+      background-color 0.15s ease;
+    backdrop-filter: blur(70px);
+    pointer-events: auto;
+  }
+
+  .dropmenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #f2f2f2;
+    gap: 10px;
+  }
+
+  .dropmenu h1 {
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .dropmenu h2 {
+    font-weight: 100;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  }
+
+  @media only screen and (max-width: 376px) {
+    .biglogo {
+      display: none;
+    }
+    .smalllogo {
+      display: block;
+    }
+
+    .logo {
+      width: 200px;
+    }
+
+    /* .menu {
+    margin-right: 100px;
+    
+  } */
+  }
+</style>
